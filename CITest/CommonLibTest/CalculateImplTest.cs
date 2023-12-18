@@ -32,5 +32,16 @@ namespace Common.Test
 
             Assert.AreEqual(50, result);
         }
+
+        [Test]
+        public void add_20And10_Return30()
+        {
+            ICalculate cal = new CalculateImpl();
+            int result = 0;
+
+            result = cal.add(20, 10);
+
+            Assert.AreEqual(30, result);
+        }
     }
 }
